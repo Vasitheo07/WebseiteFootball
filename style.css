@@ -1,0 +1,137 @@
+/* Basic reset and styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body with a background image for homepage */
+body.stadium {
+  background: url("img/campnou.png");
+  background-size: cover;
+}
+
+/* Body with a background image (optional example: keep or replace with your own) */
+body {
+  font-family: Arial, sans-serif;
+  /* If you have a background image like "picture1.png", uncomment the below lines:
+  background: url("picture1.png") no-repeat center center fixed;
+  background-size: cover;
+  */
+  background-color: #fafafa;  /* fallback if no background image */
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Header and Navigation */
+header {
+  background-color: rgba(146, 45, 45, 0.8);
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  color: #f4f6f4;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-top: 0.5em;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.2em 0.6em;
+}
+
+nav ul li a:hover {
+  background-color: #fff;
+  color: #932d2d;
+  border-radius: 3px;
+}
+
+/* Main content area */
+main {
+  padding: 1em;
+  background-color: rgba(16, 180, 93, 0.8);
+  margin: 0 1em 1em 1em;
+  border-radius: 5px;
+}
+
+/* Images */
+.featured-image,
+.extra-image,
+.club-badge {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 0.5em 0;
+}
+
+/* Optionally, you can set specific widths for certain classes */
+.featured-image {
+  width: 300px; /* adjust as needed */
+  height: auto;
+}
+
+.club-badge {
+  width: 100px;  /* small club badge size */
+  vertical-align: middle; /* aligns text next to the badge better */
+}
+
+.player-badge {
+  width: 400px;  /* small club badge size */
+  vertical-align: middle; /* aligns text next to the badge better */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: rgba(38, 68, 144, 0.8);
+  margin: 1em;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/* Form styling */
+form {
+  margin-top: 1em;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 50%;
+  padding: 0.5em;
+  margin-top: 0.2em;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  padding: 0.7em 1.5em;
+  border: none;
+  background-color: #007BFF;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 0.5em;
+  border-radius: 3px;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
